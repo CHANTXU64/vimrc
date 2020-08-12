@@ -34,6 +34,7 @@ set background=light
 
 highlight Pmenu ctermfg=232 ctermbg=253
 highlight PmenuSel ctermfg=232 ctermbg=248
+hi Search term=standout ctermfg=8 ctermbg=229
 
 " source ~/.vim/chant_theme.vim
 " let g:airline_theme='chant_theme'
@@ -66,7 +67,7 @@ set ffs=unix,dos,mac
 " Set 7 lines to the cursor - when moving vertically using j/k
 set scrolloff=7
 
-map <leader>q :q
+set iskeyword=a-z,A-Z,48-57
 
 " Fast saving
 map <Leader>w :w<CR>
@@ -153,6 +154,9 @@ map <leader>k <C-W>k
 map <leader>h <C-W>h
 map <leader>l <C-W>l
 
+noremap ;; ;
+noremap ; `
+
 set ttimeoutlen=50
 set timeoutlen=1000
 set updatetime=200
@@ -190,8 +194,6 @@ map <right> :vertical resize+3<CR>
 nmap <leader>cn :cn<cr>
 nmap <leader>cp :cp<cr>
 nmap <leader>cw :cw 10<cr>
-
-inoremap <C-b> ()<esc>i
 
 " ===
 " ===Signify
