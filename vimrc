@@ -67,8 +67,6 @@ set ffs=unix,dos,mac
 " Set 7 lines to the cursor - when moving vertically using j/k
 set scrolloff=7
 
-set iskeyword=a-z,A-Z,48-57
-
 " Fast saving
 map <Leader>w :w<CR>
 
